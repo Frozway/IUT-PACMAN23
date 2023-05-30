@@ -37,6 +37,8 @@ void directionEnemy(volatile Character * anEnemy);
 void moveEnemy(volatile Character * anEnemy);
 void moveAllEnemy(void);
 void displayPacmanScore(unsigned int abscisse, unsigned int nbNourriture);
+void displayTimer(void);
+void delay( unsigned long duration);
 
 unsigned int collision(volatile Character * character1, volatile Character * character2);
 unsigned int collisionEnemy(volatile Character * character);

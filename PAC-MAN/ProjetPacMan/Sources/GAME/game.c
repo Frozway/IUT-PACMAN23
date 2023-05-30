@@ -22,6 +22,7 @@
 #include "bouton.h"
 
 
+
 // affichage du plateau de jeu
 void drawBoard(void)
 	{
@@ -369,6 +370,24 @@ void displayPacmanScore(unsigned int abscisse, unsigned int nbNourriture)
 						 WIDTH_FOOD , HEIGHT_FOOD ,
 						 (unsigned char *)bmpFood);
 	}
+}
+
+void displayTimer()
+{
+	int i = 0 ;
+	while(1)
+	{
+		delay(1000);
+		GLCD_DrawString(10, 200, (string)i);
+		i++;
+	}
+	
+		
+}
+
+void delay( unsigned long duration)
+{
+    while ( ( duration -- )!= 0);
 }
 
 void gameLoop()
